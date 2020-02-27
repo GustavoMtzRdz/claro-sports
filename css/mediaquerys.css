@@ -1,0 +1,35 @@
+@media only all and (max-device-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background-color: #000; line-height: 1.4
+  }
+  * {
+    font-size: 0.9rem;
+  }
+  p {
+   font-weight: bold;
+  }
+}
+@media only all and (min-device-width: 48em) {
+  body {
+    background-color: gray;
+  }
+  * {
+    font-size: 1rem;
+    font-style: italic;
+  }
+  p {
+   font-weight: initial;
+  }
+}
+@media only all and (min-width:80em) {
+  body {
+    background-color: gainsboro;
+  }
+  * {
+    font-size: 1.5rem;
+    font-style: initial;
+  }
+  p {
+    font-weight: bolder;
+  }
+}
