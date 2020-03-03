@@ -119,4 +119,38 @@ header .container {
 small {
   font-size: .8rem;
 }
+.item figure {
+  background-color:#232323;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+}
+.item figure:hover {
+  animation: demo ease-in-out 1s;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leyenda {
+  display: none;
+}
+.leyenda br {
+  line-height: initial;
+}
+.item figure:hover .leyenda {
+  display: flex;
+}
+.item figure:hover img {
+  display: none;
+}
+@keyframes demo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 

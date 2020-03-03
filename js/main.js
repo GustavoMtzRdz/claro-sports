@@ -23,7 +23,7 @@ const countdown = (deadline, elem, message) => {
     /* el.innerHTML = `${t.remaindDays}d:${t.remaindHours}h:${t.remaindMinutes}m:${t.remaindSeconds}s`; */
     el.innerHTML = `
       <div>
-       ${t.remaindDays}<small>dias</small>
+        ${t.remaindDays}<small>dias</small>
       </div>
       <div>
         ${t.remaindHours}<small>hrs.</small>
@@ -32,7 +32,7 @@ const countdown = (deadline, elem, message) => {
         ${t.remaindMinutes}<small>min.</small>
       </div>
       <div>
-      ${t.remaindSeconds}<small>seg.</small>
+        ${t.remaindSeconds}<small>seg.</small>
       </div>
     `;
 
