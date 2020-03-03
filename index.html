@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <title>Sochi 2014</title>
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
@@ -22,14 +23,10 @@
     <div class="row">
       <div class="col-12" id="contador">
         <h2>Faltan</h2>
-        <div class="cuenta" id="cuenta">
-
-        </div>
+        <div class="cuenta" id="cuenta"></div>
       </div>
       <div class="col-12" id="video">
-        <video width="400" controls>
-          <!-- <source src="https://www.youtube.com/watch?v=EfK-WX2pa8c"> -->
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EfK-WX2pa8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </section>
@@ -39,22 +36,22 @@
         <h2>Claro Sports en Sochi 2014</h2>
       </div>
     </div>
-    <div class="col-12">
-      <div class="items row">
+    <div class="row">
+      <div class="col-12 items">
         <div class="item">
-          <figure><img src="img/team-latam.png" alt="" class="circle"></figure>
+          <figure><img srcset="img/team-latam.png" alt="" class="circle"></figure>
           <p><small>Team latam</small></p>
         </div>
         <div class="item">
-          <figure><img src="img/travel-meets-fashion.png" alt="" class="circle"></figure>
+          <figure><img srcset="img/travel-meets-fashion.png" alt="" class="circle"></figure>
           <p><small>travel meets fashion</small></p>
         </div>
         <div class="item">
-          <figure><img src="img/velocidad-riesgo.png" alt="" class="circle"></figure>
+          <figure><img srcset="img/velocidad-riesgo.png" alt="" class="circle"></figure>
           <p><small>velocidad y riesgo</small></p>
         </div>
         <div class="item">
-          <figure><img src="img/experiencia.png" alt="" class="circle"></figure>
+          <figure><img srcset="img/experiencia.png" alt="" class="circle"></figure>
           <p><small>experiencia multimedia</small></p>
         </div>
       </div>
@@ -80,6 +77,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script async src="js/main.js"></script>
+  <script async src="js/clip.js"></script>
 </body>
 </html>

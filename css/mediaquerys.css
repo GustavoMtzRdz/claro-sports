@@ -1,27 +1,4 @@
-@media only all and (min-width:80em) {
-  p {
-    font-size: 1.5rem;
-    font-style: initial;
-  }
-  .items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-}
-
-@media only all and (min-width: 48em) {
-  p {
-    font-size: 1rem;
-    font-style: italic;
-  }
-}
-@media only all and (max-width: 480px) {
-  body {
-    line-height: 1.4
-  }
+@media all and (min-width: 480px) {
   p {
     font-size: 0.9rem;
   }
@@ -32,6 +9,27 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
+
+@media all and (min-width: 48em) {
+  p {
+    font-size: 1rem;
+    font-style: italic;
+  }
+}
+
+@media all and (min-width:80em) {
+  p {
+    font-size: 1.5rem;
+    font-style: initial;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
