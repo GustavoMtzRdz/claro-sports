@@ -1,3 +1,4 @@
+
 const getRemaindTime = deadline => {
 	let now = new Date().getTime(),
 		remaindTime = (new Date(deadline).getTime() - now + 1000) / 1000,
@@ -14,12 +15,13 @@ const getRemaindTime = deadline => {
 			remaindDays
 		}
 };
+
 console.log(getRemaindTime('Jul 24 2020 00:00:00 GMT-0600'));
-const countdown = (deadline, elem, message) => {
-  const el = document.getElementById(elem);
+
+const countdown = (deadline, cuenta, message) => {
+  const el = document.getElementById(cuenta);
   const timerUpdate = setInterval( () => {
     let t = getRemaindTime(deadline);
-
     /* el.innerHTML = `${t.remaindDays}d:${t.remaindHours}h:${t.remaindMinutes}m:${t.remaindSeconds}s`; */
     el.innerHTML = `
       <div>
@@ -35,8 +37,6 @@ const countdown = (deadline, elem, message) => {
         ${t.remaindSeconds}<small>seg.</small>
       </div>
     `;
-
-
     if(t.remaindTime <= 1){
       clearInterval(timerUpdate);
       el.innerHTML = message;
@@ -45,4 +45,3 @@ const countdown = (deadline, elem, message) => {
 };
 
 countdown('Jul 24 2020 00:00:00 GMT-0600', 'cuenta', 'Los Juegos Olimpicos han iniciado :)');
-

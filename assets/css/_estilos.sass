@@ -1,0 +1,140 @@
+/** SASS SYNTAX **/
+@import "/node_modules/normalize.css/normalize.css"
+@import "includes/_grid"
+@import "includes/_mediaquerys"
+
+$font-stack: 'Exo'
+$bg-color: #000
+$font-mobile: #f60
+$text-white: #fff
+
+body
+  font-family: $font-stack
+  background-color: $bg-color
+  color: $text-white
+
+section.row, .row
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+
+/** estilos claro sports **/
+h1, h2, h3, h4, h5
+  text-transform: uppercase
+  text-rendering: optimizeLegibility
+
+a
+  transition: all 0.3s ease-in-out
+  text-decoration: none
+
+.light
+  font-weight: 100
+
+.bold
+  font-weight: bold
+
+header
+  .container:first-child
+    .row
+      justify-content: space-between
+      align-items: center
+      border-bottom: solid 2px red
+
+/** seccion contador **/
+.cuenta-r
+  text-align: center
+  background-image: url('/assets/img/background.jpg')
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  padding-bottom: 4rem
+
+.cuenta
+  display: flex
+  align-items: center
+  justify-content: center
+  text-transform: uppercase
+  margin: 2rem 0
+  div
+    width: 60px
+    height: 60px
+    padding: 5px
+    border: solid 2px #fff
+    border-radius: 50%
+    margin: 0 .25rem
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    font-size: 1.5rem
+    text-shadow: 0 1px #333
+    font-weight: bold
+
+#cuenta
+  small
+    font-size: 1rem
+
+/** seccion items video **/
+.items
+  text-transform: uppercase
+  background-color: #232323
+  padding: 3% 0 4%
+  text-align: center
+
+.item
+  font-size: .9rem
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.item
+  figure
+    background-color:#232323
+    border-radius: 50%
+    overflow: hidden
+    height: 200px
+    width: 200px
+    cursor: pointer
+    &:hover
+      animation: demo ease-in-out 1s
+      background-color: red
+      display: flex
+      align-items: center
+      justify-content: center
+
+.leyenda
+  display: none
+  text-transform: none
+  br
+    line-height: initial
+
+.item figure:hover .leyenda
+  display: flex
+
+.item figure:hover img
+  display: none
+
+@keyframes demo
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+/** pie de pagina **/
+footer
+  a
+    color: #fff
+    font-weight: 400
+    &:hover
+      color: #f60
+
+  .item-footer > div
+    display: flex
+    justify-content: center
+    align-items: center
+
+  img.social-icon
+    background-color: red
+    border-radius: 5px
+    margin: 0 5px
+    padding: 5px
